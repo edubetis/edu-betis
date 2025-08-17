@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Betis Balompié</title>
+    <style>
+        /* Reset básico */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+        body { background-color: #f4f4f4; color: #333; }
+
+        header {
+            background-color: #10703a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #145c35;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+
+        h2 { color: #10703a; margin-bottom: 20px; }
+
+        .noticias, .plantilla, .partidos, .galeria { display: flex; flex-wrap: wrap; gap: 20px; }
+
+        .card {
+            background: white;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+
+        .card img { max-width: 100%; border-radius: 10px; }
+
+        footer {
+            background-color: #145c35;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px){
+            .card { flex: 1 1 100%; }
+            nav { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Betis Balompié</h1>
+    <p>Pasión verdiblanca</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#historia">Historia</a>
+    <a href="#plantilla">Plantilla</a>
+    <a href="#partidos">Próximos Partidos</a>
+    <a href="#galeria">Galería</a>
+</nav>
+
+<section id="inicio">
+    <h2>Últimas Noticias</h2>
+    <div class="noticias">
+        <div class="card">
+            <h3>Victoria importante en LaLiga</h3>
+            <p>El Betis ganó 2-1 contra su rival histórico en un partido emocionante.</p>
+        </div>
+        <div class="card">
+            <h3>Nuevo fichaje confirmado</h3>
+            <p>El club anuncia la incorporación de un prometedor delantero joven.</p>
+        </div>
+        <div class="card">
+            <h3>Entrenamiento de la semana</h3>
+            <p>El equipo se prepara para el próximo partido con sesiones intensivas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="historia">
+    <h2>Historia del Club</h2>
+    <p>Fundado en 1907, el Real Betis Balompié es uno de los clubes más emblemáticos de Andalucía. Conocido por su afición apasionada, ha vivido grandes momentos tanto en LaLiga como en competiciones europeas.</p>
+</section>
+
+<section id="plantilla">
+    <h2>Plantilla Destacada</h2>
+    <div class="plantilla">
+        <div class="card">
+            <h3>Jugador 1</h3>
+            <p>Delantero</p>
+        </div>
+        <div class="card">
+            <h3>Jugador 2</h3>
+            <p>Centrocampista</p>
+        </div>
+        <div class="card">
+            <h3>Jugador 3</h3>
+            <p>Defensa</p>
+        </div>
+    </div>
+</section>
+
+<section id="partidos">
+    <h2>Próximos Partidos</h2>
+    <div class="partidos">
+        <div class="card">
+            <h3>Betis vs Sevilla</h3>
+            <p>Fecha: 25 Agosto 2025</p>
+        </div>
+        <div class="card">
+            <h3>Betis vs Barcelona</h3>
+            <p>Fecha: 1 Septiembre 2025</p>
+        </div>
+        <div class="card">
+            <h3>Betis vs Real Madrid</h3>
+            <p>Fecha: 8 Septiembre 2025</p>
+        </div>
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galería</h2>
+    <div class="galeria">
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/32/Real_Betis_logo.png" alt="Logo Betis">
+        </div>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Real_Betis_Balompi%C3%A9_2017.jpg" alt="Estadio">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Real Betis Balompié - Página creada por un fan</p>
+</footer>
+
+</body>
+</html>
